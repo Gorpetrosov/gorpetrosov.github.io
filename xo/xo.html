@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>X & O</title>
+
+    <link rel="stylesheet" href="xo.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="X & O" content="An online x & O game">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="xo.js"></script>
+</head>
+
+<body>
+    <!--settings bar-->
+    <nav id="setting">
+        <ul>
+            <li>
+                <a>Settings<span class="caret"></span></a>
+                <div>
+                    <ul>
+                        <li>
+                            <a>Music<audio id="music" src="icon/up.mp3"></audio><span class="caret"></span></a>
+                            <div>
+                                <ul>
+                                    <li><button id="On" onclick="document.getElementById('music').play()">On</button></li>
+                                    <li><button id="Off" onclick="document.getElementById('music').load()">Off</button></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><button id="reset">Reset</button></li>
+                        <li><button id="tryAgain">Try Again</button></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <heading>
+        <h1>X & O</h1>
+        <hr>
+    </heading>
+    <!-- Choosing the game size and submit-->
+    <section class="subsize">
+        <div id="gamesize">
+            <p>Choose game Size</p>
+            <input type="number" name="quantity" id="size" value="3" min="3">
+            <div id="submit">
+                <button value="Choose">  Choose </button>
+            </div>
+        </div>
+    </section>
+    <p>
+        <marquee direction="left">
+            <h4>TO PLAY WITHOUT WINNING, IS TO TALK WITHOUT THINKING</h4>
+        </marquee>
+    </p>
+    <div id="secondpart">
+        <!-- Display the choice of "X" and "O" for player -->
+
+
+        <section>
+            <button id="x" class="side"></button>
+            <button id="o" class="side"></button>
+            <p class="side">Choose your side!</p>
+        </section>
+
+        <!-- Choose who start the first-->
+        <section>
+            <button id="player" class="starter"></button>
+            <button id="computer" class="starter"></button>
+            <p class="starter">Choose who starts!</p>
+        </section>
+
+    </div>
+
+   
+    <!-- Game Board -->
+    <div id="container">
+        <!-- Reset Button -->
+
+        <div id="wrapper" align="center"></div>
+    </div>
+    <!--#container-->
+    <footer>&copy; 2017 | <a href="https://www.linkedin.com/in/gor-petrosyan-0b619413b/"> Gor Petrosyan</a></footer>
+
+</body>
+
+</html>
