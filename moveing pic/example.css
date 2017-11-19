@@ -1,0 +1,14 @@
+img {
+    border-radius: 50%;
+    border: 1px dashed green;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+}
+
+body{
+    width: 800px;
+    position: relative;
+    height: 600px;
+}
+
