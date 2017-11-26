@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Navbar</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="logo-block">
+        <h1><a href="#" id="logo" class="logo"><i class="fa fa-bitbucket-square fa-fw"></i> Site</a></h1>
+      </div>
+      <div class="items-block">
+        <button type="button" id="bars" class="bars">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul class="items-ul" id="ul-items">
+          <li><a href="#home"><i class="fa fa-home fa-fw"></i> Home</a></li>
+          <li><a href="#products"><i class="fa fa-product-hunt fa-fw"></i> Products</a></li>
+          <li><a href="#categories"><i class="fa fa-indent fa-fw"></i> Categories</a></li>
+          <li><a href="#informations"><i class="fa fa-info-circle fa-fw"></i> Informations</a></li>
+          <li><a href="#contact"><i class="fa fa-info-circle fa-fw"></i> Contact Us</a></li>
+          <li>
+            <a href="/">
+              <i class="fa fa-database fa-fw"></i>
+              Databases
+              <i class="fa fa-angle-down fa-fw"></i>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="/"><i class="fa fa-database fa-fw"></i> MySQL</a></li>
+              <li><a href="/"><i class="fa fa-database fa-fw"></i> Oracle</a></li>
+              <li><a href="/"><i class="fa fa-database fa-fw"></i> PostgreSQL</a></li>
+              <li><a href="/"><i class="fa fa-database fa-fw"></i> SQL SERVER</a></li>
+              <li><a href="/"><i class="fa fa-database fa-fw"></i> AMAZON Redshift</a></li>
+              <li><a href="/"><i class="fa fa-database fa-fw"></i> Azure (Microsoft)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home"><h2>Section 1</h2></section>
+      <section id="products"><h2>Section 2</h2></section>
+      <section id="categories"><h2>Section 3</h2></section>
+      <section id="informations"><h2>Section 4</h2></section>
+      <section id="contact"><h2>Section 5</h2></section>
+    </main>
+
+
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

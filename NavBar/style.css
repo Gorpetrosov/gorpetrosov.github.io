@@ -1,0 +1,146 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  padding: 65px 0 0 0;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  display: inline-block;
+  padding: 0 10px;
+  margin: 0 10px;
+  outline: none;
+  transition: all .2s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+nav {
+  background: #789;
+  color: #eee;
+  display: table;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.bars {
+  margin-right: 20px;
+  font-size: 23px;
+  border: none;
+  background: no-repeat;
+  color: #ccc;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+.bars:hover {
+  color: #fff;
+}
+
+.logo-block {
+  width: 15%;
+  float: left;
+}
+
+.items-block {
+  width: 85%;
+  float: right;
+}
+
+.items-ul li:last-child {
+  position: relative;
+}
+
+.items-ul.items-ul-open {
+  height: 226px;
+}
+
+.items-ul li a {
+  border-bottom: 5px solid #789;
+}
+.items-ul li a:hover {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 700;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+section {
+  height: 900px;
+  line-height: 900px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #fff;
+}
+
+section:nth-child(1) {
+  background: coral;
+}
+section:nth-child(2) {
+  background: #41f3fc;
+}
+section:nth-child(3) {
+  background: #00ff0c;
+}
+section:nth-child(4) {
+  background: #ff8c00;
+}
+section:nth-child(5) {
+  background: red;
+}
+
+.sub-menu {
+  width: 154px;
+  position: absolute;
+  right: 10px;
+  top: 71px;
+  text-align: left;
+  transition: all .2s ease-in-out;
+  box-shadow: 0 0 15px #789;
+  opacity: 0;
+}
+.sub-menu li {
+  display: block;
+background: #789;
+height: 35px;
+line-height: 35px;
+color: #fff;
+padding: 0 5px;
+font-size: 14px;
+}
+.show {
+  opacity: 1;
+}
+.sub-menu li > a {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: inline-block;
+  width: 100%;
+}
