@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding:0;
+    background: #ffe2f9;
+    overflow: hidden;
+}
+
+.ball{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    opacity: 0;
+    animation: moving 0.8s ease-out;
+}
+
+@keyframes moving {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
