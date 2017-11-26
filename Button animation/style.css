@@ -1,0 +1,152 @@
+body{
+ background-image: url("img/ep_naturalwhite.png");
+}
+.dws-button *{
+ margin: 0;
+ padding: 0;
+}
+.dws-button{
+ font-family: Cuprum, Arial, Verdana, sans-serif;
+ width: 250px;
+ height: 70px;
+ margin: 250px auto;
+ position: relative;
+}
+.b-demo, .b-text, .b-img, .b-demo:before, .b-img:after{
+ position: absolute;
+ transition:all 1.5s;
+}
+.dws-button a{
+ text-decoration: none;
+ color: #ffffff;
+}
+.b-demo, .b-img{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f22404+13,8e0b00+65,6d0019+100 */
+ background: rgb(242,36,4); /* Old browsers */
+ background: -moz-linear-gradient(-45deg,  rgb(242,36,4) 13%, rgb(142,11,0) 65%, rgb(109,0,25) 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(-45deg,  rgb(242,36,4) 13%,rgb(142,11,0) 65%,rgb(109,0,25) 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(135deg,  rgb(242,36,4) 13%,rgb(142,11,0) 65%,rgb(109,0,25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f22404', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.b-demo{
+ width: 105px;
+ line-height: 70px;
+ text-align: center;
+ font-size: 30px;
+ text-transform: uppercase;
+ padding: 0 10px 0 15px;
+ left: 0;
+ top: 0;
+ z-index:10;
+ border-radius: 10px 0 0 10px;
+ text-shadow: -1px -1px 1px #000000;
+}
+.b-text{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50;Custom+2 */
+ background: rgb(179,220,237); /* Old browsers */
+ background: -moz-linear-gradient(45deg,  rgb(179,220,237) 0%, rgb(41,184,229) 50%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(45deg,  rgb(179,220,237) 0%,rgb(41,184,229) 50%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(45deg,  rgb(179,220,237) 0%,rgb(41,184,229) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#29b8e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ color: #ffffff;
+ font-size: 24px;
+ width: 150px;
+ line-height: 20px;
+ text-align: center;
+ padding: 10px 0 10px 10px;
+ left: 5px;
+ top: 5px;
+}
+.b-img{
+ width: 45px;
+ line-height: 45px;
+ padding: 20px 0 0 20px;
+ left: 140px;
+ top: 0;
+ border-radius: 0 10px 10px 0;
+}
+.b-demo:before{
+ content: '';
+ width: 0;
+ height: 0;
+ border-top: 35px solid transparent;
+ border-left: 10px solid #7b040e;
+ border-bottom: 35px solid transparent;
+ top: 0;
+ left: 129px;
+}
+.b-img:after{
+ content: '';
+ width: 0;
+ height: 0;
+ border-top: 35px solid transparent;
+ border-left: 10px solid #29b8e5;
+ border-bottom: 35px solid transparent;
+ top: 0;
+ left: 0;
+}
+
+/* Animation :hover */
+.dws-button a:hover .b-demo,
+.dws-button a:hover .b-demo:before,
+.dws-button a:hover .b-text,
+.dws-button a:hover .b-img,
+.dws-button a:hover .b-img:after{
+ transition: all 0.5s;
+}
+.dws-button a:hover .b-demo{
+ width: 50px;
+ padding: 0 10px 0 10px;
+ font-size: 20px;
+}
+.dws-button a:hover .b-demo:before{
+ left: 69px;
+}
+.dws-button a:hover .b-img{
+ left:185px;
+}
+.dws-button a:hover .b-text{
+ left: 50px;
+}
+.b-img img{
+ transition: all 1.5s;
+}
+.dws-button a:hover img{
+ transform: rotate(360deg);
+ opacity: 0.5;
+}
+
+/* Animation :active */
+.dws-button a:active .b-demo,
+.dws-button a:active .b-img{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f22404+13,8e0b00+49,6d0019+70 */
+ background: rgb(242,36,4); /* Old browsers */
+ background: -moz-linear-gradient(45deg,  rgb(242,36,4) 13%, rgb(142,11,0) 49%, rgb(109,0,25) 70%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(45deg,  rgb(242,36,4) 13%,rgb(142,11,0) 49%,rgb(109,0,25) 70%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(45deg,  rgb(242,36,4) 13%,rgb(142,11,0) 49%,rgb(109,0,25) 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f22404', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.dws-button a:active .b-text{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50 */
+ background: rgb(179,220,237); /* Old browsers */
+ background: -moz-linear-gradient(-45deg,  rgb(179,220,237) 0%, rgb(41,184,229) 50%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(-45deg,  rgb(179,220,237) 0%,rgb(41,184,229) 50%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(135deg,  rgb(179,220,237) 0%,rgb(41,184,229) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#29b8e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+ box-shadow: 0 0 3px 1px #82dcff;
+}
+.dws-button a:active img{
+ transform: rotate(0deg);
+ opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
