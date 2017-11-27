@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Generator</title>
+    <link rel="stylesheet" href="cssGenerator.css">
+</head>
+<body>
+<form action="cssGen">
+<p>Left</p>
+    <input type="range" id="ran1" min="0" max="100" value="0" oninput="func()">
+  <input type="text" value="0" id="t1">
+    <p>Right</p>
+<input type="range" id="ran2" min="0" max="100" value="0" oninput="func()">
+    <input type="text" value="0" id="t2" >
+    <p>Top</p>
+<input type="range" id="ran3" min="0" max="100" value="0" oninput="func()">
+    <input type="text" value="0" id="t3">
+    <p>Botton</p>
+<input type="range" id="ran4" min="0" max="100" value="0" oninput="func()">
+    <input type="text" value="0" id="t4">
+</form>
+
+<div class="gen" id="gen" oninput="func()"> </div>
+
+
+
+
+
+
+<script src="cssGenerator.js"></script>
+</body>
+</html>
