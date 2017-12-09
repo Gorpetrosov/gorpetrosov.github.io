@@ -1,0 +1,42 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    /*display: flex;*/
+    font-family: Verdana;
+
+
+
+}
+.speechBoard {
+    /*text-align: center;*/
+    background-color: azure;
+    width: 300px;
+    height: 500px;
+    border: solid 1px azure;
+    margin: 10px 0 0 350px;
+    box-shadow: 0 0 15px 0 gray;
+    border-radius: 15px;
+}
+
+.result {
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    margin: 0 0 10px 25px;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+    font-size: 10px;
+    color: blue;
+    padding: 5px;
+}
+
+#mic {
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    border: 0;
+    position: static;
+}
