@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/speech.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <title>Speech Recognition</title>
+</head>
+<body>
+<div class="speechBoard">
+    <h3>Speech Recognition Board</h3>
+    <label for="result">
+    <textarea name="res" class="result" id="result"></textarea>
+    </label>
+    <div class="functional">
+    <button id="mic" title="click to Recognize Speech"><i class="fas fa-microphone"></i></button>
+        <form action="#" name="myForm" >
+            <select name="lang" id="lang" title="Choose Language">
+                <option value="">Choose language</option>
+                <option value="hy-AM">Armenian</option>
+                <option value="ru-RU">Russian</option>
+                <option value="en-GB">English</option>
+                <option value="fr-FR">French</option>
+            </select>
+        </form>
+    <button id="copy" title="Click to Copy Text"><i class="fa fa-clone" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+<script src="js/speech.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+</body>
+</html>
