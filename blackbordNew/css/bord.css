@@ -1,6 +1,8 @@
 
 body {
-    background-image: url("../cotent/class.jpeg");
+    background: url(../cotent/class.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 .bord {
     width: 1000px;
