@@ -1,0 +1,113 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Verdana, sans-serif;
+ background: url("img/ignasi_pattern_s.png");
+}
+.dws-wrapper {
+ height: 900px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.img-box {
+ overflow: hidden;
+ position: relative;
+ display: flex;
+ align-items: center;
+ border-left: 2px solid #5F6062;
+}
+
+.img-box h4,
+.img-box p {
+ position: absolute;
+ background: rgba(191,33,26, 0.8);
+ color: #ffffff;
+ right: 100px;
+ bottom: 70px;
+ padding: 10px 30px;
+ transition: 1s;
+ opacity: 0;
+ transform: translateX(-200px);
+ z-index: 2;
+}
+.img-box h4 {
+ text-transform: uppercase;
+}
+.img-box p {
+ font-size: 14px;
+ background: rgba(41,116,146, 0.8);
+ width: 50%;
+ bottom: 20px;
+ text-align: right;
+ transition: 2s;
+}
+.img-box:hover h4,
+.img-box:hover p {
+ opacity: 1;
+ transform: translateX(0);
+}
+.img-wrapper {
+ display: flex;
+}
+.img-wrapper img {
+ height: 300px;
+ border: 2px solid #5f6062;
+ border-left: none;
+ transition: 1s;
+ z-index: 1;
+}
+.img-box:hover img {
+ border-radius: 30px;
+ transform: translateX(-80px);
+ filter: grayscale(.75);
+}
+.img-box ul {
+ list-style: none;
+ background: #2e81a7;
+ border: 2px solid #235477;
+ border-radius: 0 10px 10px 0;
+ margin-left: -115px;
+ transform: translateX(-20px);
+ transition: 1s;
+}
+.img-box:hover ul {
+ transform: translateX(0);
+}
+.img-box li {
+ margin: 10px;
+ padding: 10px;
+ text-align: center;
+ border-bottom: 1px solid #214263;
+ box-shadow: 0 1px 0 0 #8bb5d2;
+}
+.img-box li:last-child {
+ border-bottom: none;
+ box-shadow: none;
+}
+.img-box li i {
+ color: #ffffff;
+ font-size: 30px;
+ text-shadow: 2px 2px 3px #133648;
+}
+.img-box li a:hover i {
+ color: #1a4a6f;
+ text-shadow: -1px -1px 0 #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
