@@ -1,0 +1,174 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+.navbar-nav {
+    margin-right: 0;
+}
+.navbar-nav > li {
+    padding-left: 20px;
+}
+
+a.spoiler::after {
+    content: ' [-]';
+}
+
+a.spoiler.collapsed::after {
+    content: ' [+]';
+}
+
+/* SVG */
+.sign {
+    width: 15px;
+    height: 22px;
+    fill: #fff;
+    vertical-align: middle;
+    stroke: #fff;
+    stroke-width: 20px;
+    margin-right: 5px;
+}
+.my-svg {
+    width: 30px;
+    height: 30px;
+    fill: #ee7337;
+    border: 1px solid #ee7337;
+    border-radius: 5px;
+    padding: 3px;
+}
+.my-svg:hover {
+    background: #ee7337;
+    fill: #fff;
+}
+/* SVG */
+
+
+.position-span {
+    position: absolute;
+    left: 30px;
+    top: 45%;
+}
+.position-span2 {
+    position: absolute;
+    right: 30px;
+    top: 45%;
+}
+.position-span > .my-svg, .position-span2 > .my-svg {
+    border: none;
+    background: none;
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+    stroke: #fff;
+    stroke-width: 10px;
+}
+.my-class {
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .content-site {
+        width: 100%;
+        position: relative;
+        left: 0;
+        transition: all .4s;
+    }
+    .content-site.in2 {
+        left: 300px;
+    }
+
+    .my-class {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 300px;
+        height: 100%;
+        padding: 0;
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        transition: width .4s;
+    }
+
+    .my-class.in {
+        width: 0;
+    }
+
+    ul.nav li:hover {
+        background: #292929;
+    }
+
+}
+
+
+/* catalog.php */
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.thumbnail {
+    background: rgba(238, 238, 238, 0.31);
+}
+.thumbnail > img {
+    min-height: 120px;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    content: "\f105";
+    font-family: FontAwesome;
+}
+
+/* Блоки разной высоты */
+@media screen and (min-width: 1200px) {
+    .massonry[data-columns]::before {
+        content: '4 .col-xs-3';
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .massonry[data-columns]::before {
+        content: '3 .col-xs-4';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .massonry[data-columns]::before {
+        content: '2 .col-xs-6';
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .massonry[data-columns]::before {
+        content: '2 .col-xs-6';
+    }
+}
+
+@media screen and (min-width: 318px) and (max-width: 479px) {
+    .massonry[data-columns]::before {
+        content: '1 .col-xs-12';
+    }
+}
+/* Блоки разной высоты */
+
+
+/* catalog.php */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

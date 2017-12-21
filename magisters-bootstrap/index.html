@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+
+<!-- Menu and dropdown-menu -->
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Логотип</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                <span class="sr-only">Открыть навигацию</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="my-class in" id="responsive-menu">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Item 3 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sub-item 1</a></li>
+                        <li><a href="#">Sub-item 2</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Sub-item 3</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form action="#" method="post" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="sign" viewBox="0 0 479.754 479.754" xml:space="preserve">
+                        <path d="M468.146,25.092H129.638c-6.411,0-11.608,5.198-11.608,11.608c0,6.413,5.197,11.61,11.608,11.61h326.899v383.133H129.638
+                            c-6.411,0-11.608,5.196-11.608,11.611c0,6.408,5.197,11.606,11.608,11.606h338.508c6.41,0,11.607-5.198,11.607-11.606V36.701
+                            C479.754,30.291,474.557,25.092,468.146,25.092z"/>
+                        <path d="M176.793,310.41c-4.535,4.536-4.535,11.883,0,16.419c2.268,2.267,5.24,3.4,8.211,3.4c2.969,0,5.938-1.135,8.206-3.4
+                            l71.589-71.588c4.536-4.535,4.536-11.885,0-16.417l-71.589-71.598c-4.534-4.538-11.882-4.538-16.417,0
+                            c-4.535,4.528-4.535,11.881,0,16.414l51.771,51.781H11.61C5.199,235.42,0,240.62,0,247.03c0,6.412,5.199,11.611,11.61,11.611
+                            h216.954L176.793,310.41z"/>
+                    </svg>
+                    
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Menu and dropdown-menu -->
+
+<!-- Content -->
+<div class="containere-fluid content-site">
+
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel" data-slide-to="0"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/slide1.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Заголовок первого слайда</h2>
+                    <p>Описание первого слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/slide2.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Заголовок второго слайда</h2>
+                    <p>Описание второго слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/slide3.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Заголовок третьего слайда</h2>
+                    <p>Описание третьего слайда</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/slide4.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Заголовок четвертого слайда</h2>
+                    <p>Описание четвертого слайда</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+            <span class="position-span">
+                <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 477.175 477.175"
+                     xml:space="preserve">
+                    <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                            c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+                </svg>
+            </span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+            <span class="position-span2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 477.175 477.175"
+                     xml:space="preserve">
+                    <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                            c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                </svg>
+            </span>
+        </a>
+    </div>
+    <!-- Carousel -->
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <!-- List SVG -->
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 16 16" xml:space="preserve">
+                    <path d="M6 8h-5v-2h5v-2l3 3-3 3zM16 0v13l-6 3v-3h-6v-4h1v3h5v-9l4-2h-9v4h-1v-5z"></path>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 477.175 477.175"
+                                 xml:space="preserve">
+                    <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                            c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"/>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 477.175 477.175"
+                                 xml:space="preserve">
+                    <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                            c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 475.2 475.2" xml:space="preserve">
+								<path d="M405.6,69.6C360.7,24.7,301.1,0,237.6,0s-123.1,24.7-168,69.6S0,174.1,0,237.6s24.7,123.1,69.6,168s104.5,69.6,168,69.6
+									s123.1-24.7,168-69.6s69.6-104.5,69.6-168S450.5,114.5,405.6,69.6z M386.5,386.5c-39.8,39.8-92.7,61.7-148.9,61.7
+									s-109.1-21.9-148.9-61.7c-82.1-82.1-82.1-215.7,0-297.8C128.5,48.9,181.4,27,237.6,27s109.1,21.9,148.9,61.7
+									C468.6,170.8,468.6,304.4,386.5,386.5z"/>
+											<path d="M342.3,132.9c-5.3-5.3-13.8-5.3-19.1,0l-85.6,85.6L152,132.9c-5.3-5.3-13.8-5.3-19.1,0c-5.3,5.3-5.3,13.8,0,19.1
+									l85.6,85.6l-85.6,85.6c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l85.6-85.6l85.6,85.6c2.6,2.6,6.1,4,9.5,4
+									c3.5,0,6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1l-85.4-85.6l85.6-85.6C347.6,146.7,347.6,138.2,342.3,132.9z"/>
+							</svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 477.6 477.6" xml:space="preserve">
+                    <path d="M407.583,70c-45.1-45.1-105-70-168.8-70s-123.7,24.9-168.8,70c-87,87-93.3,226-15.8,320.2c-10.7,21.9-23.3,36.5-37.6,43.5
+                        c-8.7,4.3-13.6,13.7-12.2,23.3c1.5,9.7,8.9,17.2,18.6,18.7c5.3,0.8,11,1.3,16.9,1.3l0,0c29.3,0,60.1-10.1,85.8-27.8
+                        c34.6,18.6,73.5,28.4,113.1,28.4c63.8,0,123.7-24.8,168.8-69.9s69.9-105.1,69.9-168.8S452.683,115.1,407.583,70z M388.483,388.5
+                        c-40,40-93.2,62-149.7,62c-37.8,0-74.9-10.1-107.2-29.1c-2.1-1.2-4.5-1.9-6.8-1.9c-2.9,0-5.9,1-8.3,2.8
+                        c-30.6,23.7-61.4,27.2-74.9,27.5c16.1-12,29.6-30.6,40.9-56.5c2.1-4.8,1.2-10.4-2.3-14.4c-74-83.6-70.1-211,8.9-290
+                        c40-40,93.2-62,149.7-62s109.7,22,149.7,62C471.083,171.6,471.083,306,388.483,388.5z"/>
+                                <path
+                                    d="M338.783,160h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5S346.183,160,338.783,160z"/>
+                                <path
+                                    d="M338.783,225.3h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5S346.183,225.3,338.783,225.3z"/>
+                                <path
+                                    d="M338.783,290.6h-200c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h200c7.5,0,13.5-6,13.5-13.5S346.183,290.6,338.783,290.6z"/>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 473 473" xml:space="preserve">
+                    <path d="M403.581,69.3c-44.7-44.7-104-69.3-167.2-69.3s-122.5,24.6-167.2,69.3c-86.4,86.4-92.4,224.7-14.9,318
+                        c-7.6,15.3-19.8,33.1-37.9,42c-8.7,4.3-13.6,13.6-12.1,23.2s8.9,17.1,18.5,18.6c4.5,0.7,10.9,1.4,18.7,1.4
+                        c20.9,0,51.7-4.9,83.2-27.6c35.1,18.9,73.5,28.1,111.6,28.1c61.2,0,121.8-23.7,167.4-69.3c44.7-44.7,69.3-104,69.3-167.2
+                        S448.281,114,403.581,69.3z M384.481,384.6c-67.5,67.5-172,80.9-254.2,32.6c-5.4-3.2-12.1-2.2-16.4,2.1c-0.4,0.2-0.8,0.5-1.1,0.8
+                        c-27.1,21-53.7,25.4-71.3,25.4h-0.1c20.3-14.8,33.1-36.8,40.6-53.9c1.2-2.9,1.4-5.9,0.7-8.7c-0.3-2.7-1.4-5.4-3.3-7.6
+                        c-73.2-82.7-69.4-208.7,8.8-286.9c81.7-81.7,214.6-81.7,296.2,0C466.181,170.1,466.181,302.9,384.481,384.6z"/>
+                                <circle cx="236.381" cy="236.5" r="16.6"/>
+                                <circle cx="321.981" cy="236.5" r="16.6"/>
+                                <circle cx="150.781" cy="236.5" r="16.6"/>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 451 451" xml:space="preserve">
+                        <path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3
+                            s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4
+                            C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3
+                            s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z"
+                        />
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 487.222 487.222"
+                                 xml:space="preserve">
+                    <path d="M486.554,186.811c-1.6-4.9-5.8-8.4-10.9-9.2l-152-21.6l-68.4-137.5c-2.3-4.6-7-7.5-12.1-7.5l0,0c-5.1,0-9.8,2.9-12.1,7.6
+                        l-67.5,137.9l-152,22.6c-5.1,0.8-9.3,4.3-10.9,9.2s-0.2,10.3,3.5,13.8l110.3,106.9l-25.5,151.4c-0.9,5.1,1.2,10.2,5.4,13.2
+                        c2.3,1.7,5.1,2.6,7.9,2.6c2.2,0,4.3-0.5,6.3-1.6l135.7-71.9l136.1,71.1c2,1,4.1,1.5,6.2,1.5l0,0c7.4,0,13.5-6.1,13.5-13.5
+                        c0-1.1-0.1-2.1-0.4-3.1l-26.3-150.5l109.6-107.5C486.854,197.111,488.154,191.711,486.554,186.811z M349.554,293.911
+                        c-3.2,3.1-4.6,7.6-3.8,12l22.9,131.3l-118.2-61.7c-3.9-2.1-8.6-2-12.6,0l-117.8,62.4l22.1-131.5c0.7-4.4-0.7-8.8-3.9-11.9
+                        l-95.6-92.8l131.9-19.6c4.4-0.7,8.2-3.4,10.1-7.4l58.6-119.7l59.4,119.4c2,4,5.8,6.7,10.2,7.4l132,18.8L349.554,293.911z"/>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 477 477" xml:space="preserve">
+                    <path d="M238.4,0C133,0,47.2,85.8,47.2,191.2c0,12,1.1,24.1,3.4,35.9c0.1,0.7,0.5,2.8,1.3,6.4c2.9,12.9,7.2,25.6,12.8,37.7
+                        c20.6,48.5,65.9,123,165.3,202.8c2.5,2,5.5,3,8.5,3s6-1,8.5-3c99.3-79.8,144.7-154.3,165.3-202.8c5.6-12.1,9.9-24.7,12.8-37.7
+                        c0.8-3.6,1.2-5.7,1.3-6.4c2.2-11.8,3.4-23.9,3.4-35.9C429.6,85.8,343.8,0,238.4,0z M399.6,222.4c0,0.2-0.1,0.4-0.1,0.6
+                        c-0.1,0.5-0.4,2-0.9,4.3c0,0.1,0,0.1,0,0.2c-2.5,11.2-6.2,22.1-11.1,32.6c-0.1,0.1-0.1,0.3-0.2,0.4
+                        c-18.7,44.3-59.7,111.9-148.9,185.6c-89.2-73.7-130.2-141.3-148.9-185.6c-0.1-0.1-0.1-0.3-0.2-0.4c-4.8-10.4-8.5-21.4-11.1-32.6
+                        c0-0.1,0-0.1,0-0.2c-0.6-2.3-0.8-3.8-0.9-4.3c0-0.2-0.1-0.4-0.1-0.7c-2-10.3-3-20.7-3-31.2c0-90.5,73.7-164.2,164.2-164.2
+                        s164.2,73.7,164.2,164.2C402.6,201.7,401.6,212.2,399.6,222.4z"/>
+                                <path d="M238.4,71.9c-66.9,0-121.4,54.5-121.4,121.4s54.5,121.4,121.4,121.4s121.4-54.5,121.4-121.4S305.3,71.9,238.4,71.9z
+                         M238.4,287.7c-52.1,0-94.4-42.4-94.4-94.4s42.4-94.4,94.4-94.4s94.4,42.4,94.4,94.4S290.5,287.7,238.4,287.7z"/>
+                </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="my-svg" viewBox="0 0 486.569 486.569"
+                                 xml:space="preserve">
+                    <path d="M146.069,320.369h268.1c30.4,0,55.2-24.8,55.2-55.2v-112.8c0-0.1,0-0.3,0-0.4c0-0.3,0-0.5,0-0.8c0-0.2,0-0.4-0.1-0.6
+                        c0-0.2-0.1-0.5-0.1-0.7s-0.1-0.4-0.1-0.6c-0.1-0.2-0.1-0.4-0.2-0.7c-0.1-0.2-0.1-0.4-0.2-0.6c-0.1-0.2-0.1-0.4-0.2-0.6
+                        c-0.1-0.2-0.2-0.4-0.3-0.7c-0.1-0.2-0.2-0.4-0.3-0.5c-0.1-0.2-0.2-0.4-0.3-0.6c-0.1-0.2-0.2-0.3-0.3-0.5c-0.1-0.2-0.3-0.4-0.4-0.6
+                        c-0.1-0.2-0.2-0.3-0.4-0.5c-0.1-0.2-0.3-0.3-0.4-0.5s-0.3-0.3-0.4-0.5s-0.3-0.3-0.4-0.4c-0.2-0.2-0.3-0.3-0.5-0.5
+                        c-0.2-0.1-0.3-0.3-0.5-0.4c-0.2-0.1-0.4-0.3-0.6-0.4c-0.2-0.1-0.3-0.2-0.5-0.3s-0.4-0.2-0.6-0.4c-0.2-0.1-0.4-0.2-0.6-0.3
+                        s-0.4-0.2-0.6-0.3s-0.4-0.2-0.6-0.3s-0.4-0.1-0.6-0.2c-0.2-0.1-0.5-0.2-0.7-0.2s-0.4-0.1-0.5-0.1c-0.3-0.1-0.5-0.1-0.8-0.1
+                        c-0.1,0-0.2-0.1-0.4-0.1l-339.8-46.9v-47.4c0-0.5,0-1-0.1-1.4c0-0.1,0-0.2-0.1-0.4c0-0.3-0.1-0.6-0.1-0.9c-0.1-0.3-0.1-0.5-0.2-0.8
+                        c0-0.2-0.1-0.3-0.1-0.5c-0.1-0.3-0.2-0.6-0.3-0.9c0-0.1-0.1-0.3-0.1-0.4c-0.1-0.3-0.2-0.5-0.4-0.8c-0.1-0.1-0.1-0.3-0.2-0.4
+                        c-0.1-0.2-0.2-0.4-0.4-0.6c-0.1-0.2-0.2-0.3-0.3-0.5s-0.2-0.3-0.3-0.5s-0.3-0.4-0.4-0.6c-0.1-0.1-0.2-0.2-0.3-0.3
+                        c-0.2-0.2-0.4-0.4-0.6-0.6c-0.1-0.1-0.2-0.2-0.3-0.3c-0.2-0.2-0.4-0.4-0.7-0.6c-0.1-0.1-0.3-0.2-0.4-0.3c-0.2-0.2-0.4-0.3-0.6-0.5
+                        c-0.3-0.2-0.6-0.4-0.8-0.5c-0.1-0.1-0.2-0.1-0.3-0.2c-0.4-0.2-0.9-0.4-1.3-0.6l-73.7-31c-6.9-2.9-14.8,0.3-17.7,7.2
+                        s0.3,14.8,7.2,17.7l65.4,27.6v61.2v9.7v74.4v66.5v84c0,28,21,51.2,48.1,54.7c-4.9,8.2-7.8,17.8-7.8,28c0,30.1,24.5,54.5,54.5,54.5
+                        s54.5-24.5,54.5-54.5c0-10-2.7-19.5-7.5-27.5h121.4c-4.8,8.1-7.5,17.5-7.5,27.5c0,30.1,24.5,54.5,54.5,54.5s54.5-24.5,54.5-54.5
+                        s-24.5-54.5-54.5-54.5h-255c-15.6,0-28.2-12.7-28.2-28.2v-36.6C126.069,317.569,135.769,320.369,146.069,320.369z M213.269,431.969
+                        c0,15.2-12.4,27.5-27.5,27.5s-27.5-12.4-27.5-27.5s12.4-27.5,27.5-27.5S213.269,416.769,213.269,431.969z M428.669,431.969
+                        c0,15.2-12.4,27.5-27.5,27.5s-27.5-12.4-27.5-27.5s12.4-27.5,27.5-27.5S428.669,416.769,428.669,431.969z M414.169,293.369h-268.1
+                        c-15.6,0-28.2-12.7-28.2-28.2v-66.5v-74.4v-5l324.5,44.7v101.1C442.369,280.769,429.669,293.369,414.169,293.369z"/>
+                </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- List SVG -->
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>iCons Fotn Awesome</h3>
+                <button class="btn btn-danger fa-lg"><i class="fa fa-download" aria-hidden="true"></i> Загрузить</button>
+                <button class="btn btn-primary fa-lg"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> Ожидание</button>
+            </div>
+        </div>
+
+        <br>
+        <!-- Подсказки -->
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-default" data-trigger="click" data-toggle="tooltip" title="Send Massage">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    Message
+                </button>
+                <button type="button" class="btn btn-primary" data-placement="right" data-toggle="tooltip" title="Go Log in">
+                    <i class="fa fa-sign-in"></i>
+                    Log In
+                </button>
+                <button type="button" class="btn btn-danger" data-placement="bottom" data-toggle="tooltip" title="Start Delete">
+                    <i class="fa fa-trash"></i>
+                    Delete
+                </button>
+                <button type="button" class="btn btn-success" data-placement="left" data-toggle="tooltip" title="Start Download">
+                    <i class="fa fa-download"></i>
+                    Download
+                </button>
+                <button type="button" class="btn btn-info" data-placement="top" data-toggle="tooltip" title="Look Info">
+                    <i class="fa fa-info-circle"></i>
+                    Info
+                </button>
+            </div>
+        </div>
+        <!-- Подсказки -->
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Всплывающие окна -->
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-default" data-toggle="popover" title="Send Message" data-content="Message">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    Message
+                </button>
+                <button type="button" class="btn btn-primary" data-placement="bottom" data-toggle="popover" title="Go Log in" data-content="Log In">
+                    <i class="fa fa-sign-in"></i>
+                    Log In
+                </button>
+                <button type="button" class="btn btn-danger" data-placement="left" data-toggle="popover" title="Start Delete" data-content="Delete">
+                    <i class="fa fa-trash"></i>
+                    Delete
+                </button>
+                <button type="button" class="btn btn-success" data-trigger="hover" data-placement="top" data-toggle="popover" title="Start Download" data-content="Download">
+                    <i class="fa fa-download"></i>
+                    Download
+                </button>
+                <button type="button" class="btn btn-info" data-placement="right" data-toggle="popover" title="Look Info" data-content="Info">
+                    <i class="fa fa-info-circle"></i>
+                    Info
+                </button>
+            </div>
+        </div>
+        <!-- Всплывающие окна -->
+
+        <br>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="list-group">
+                    <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
+                    <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw fa-spin" aria-hidden="true"></i>&nbsp; Settings</a>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Email address">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                    <input class="form-control" type="password" placeholder="Password">
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <a class="btn btn-default" href="#" aria-label="Settings">
+                    <i class="fa fa-cog fa-spin" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn btn-danger" href="#" aria-label="Delete">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn btn-primary" href="#" aria-label="Skip to main navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+
+                <a class="btn btn-primary" href="#" aria-label="VKontakte">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-square-o fa-stack-2x" style="color: #789;"></i>
+                    <i class="fa fa-vk fa-stack-1x" style="color: #ccc;"></i>
+                </span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="btn-group">
+                <a href="#" class="btn btn-success"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-success"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+            </div>
+            <div class="btn-group">
+                <a href="#" class="btn btn-danger"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-danger"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-danger"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                    <a href="#" class="btn btn-danger"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                    <a href="#" class="btn btn-danger"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-success"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                    <a href="#" class="btn btn-success"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-primary"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="btn-group btn-group-vertical">
+                <a href="#" class="btn btn-primary"><i class="fa fa-balance-scale" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-diamond" aria-hidden="true"></i></a>
+                <a href="#" class="btn btn-primary"><i class="fa fa-hourglass-o" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="btn-group dropup">
+                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        Drop-Down Menu <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="btn-group dropup">
+                    <button class="btn btn-danger">
+                        Drop-Down Menu
+                    </button>
+                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                        <li><a href="#">Submenu Submenu Submenu Submenu</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-2">
+            <form action="#" method="post" class="form-inline">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fa fa-envelope-o fa-fw"></i>
+                    </span>
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="input-group">
+                    <input type="password" class="form-control">
+                    <span class="input-group-addon">
+                        <i class="fa fa-key fa-fw"></i>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <!-- Табы -->
+            <div class="col-xs-6">
+                <div class="tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">Tabs 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Tabs 2</a></li>
+                        <li><a href="#tab3" data-toggle="tab">Tabs 3</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1">
+                            <p>Text Tab 1</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab2">
+                            <p>Text Tab 2</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab3">
+                            <p>Text Tab 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Табы -->
+            <!-- Спойлер -->
+            <div class="col-xs-6">
+                <a href="#spoiler1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Spoiler</a>
+                <div class="collapse" id="spoiler1">
+                    <div class="well">
+                        <p>Paragraph text Paragraph text Paragraph text</p>
+                        <p>Paragraph text Paragraph text Paragraph text</p>
+                        <p>Paragraph text Paragraph text Paragraph text</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Спойлер -->
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <!-- Accordion -->
+                <div class="col-xs-6">
+                    <div id="accordion" class="panel-group">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#panel1" data-parent="#accordion" data-toggle="collapse">Open 1 slide</a>
+                                </h4>
+                            </div>
+                            <div id="panel1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus
+                                        dolores eaque hic libero! Accusantium aliquam aperiam architecto asperiores
+                                        aspernatur atque beatae corporis cum deserunt dolor enim, in inventore iste
+                                        itaque magnam magni minima minus obcaecati pariatur possimus rem saepe sequi
+                                        similique soluta tempora tempore ullam. Dignissimos dolores officia
+                                        voluptas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#panel2" data-parent="#accordion" data-toggle="collapse">Open 2 slide</a>
+                                </h4>
+                            </div>
+                            <div id="panel2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus
+                                        dolores eaque hic libero! Accusantium aliquam aperiam architecto asperiores
+                                        aspernatur atque beatae corporis cum deserunt dolor enim, in inventore iste
+                                        itaque magnam magni minima minus obcaecati pariatur possimus rem saepe sequi
+                                        similique soluta tempora tempore ullam. Dignissimos dolores officia
+                                        voluptas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="#panel3" data-parent="#accordion" data-toggle="collapse">Open 3 slide</a>
+                                </h4>
+                            </div>
+                            <div id="panel3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus
+                                        dolores eaque hic libero! Accusantium aliquam aperiam architecto asperiores
+                                        aspernatur atque beatae corporis cum deserunt dolor enim, in inventore iste
+                                        itaque magnam magni minima minus obcaecati pariatur possimus rem saepe sequi
+                                        similique soluta tempora tempore ullam. Dignissimos dolores officia
+                                        voluptas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Accordion -->
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                        Open Modal Window
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="min-width: 25%;">
+                        25%
+                    </div>
+                    <div class="progress-bar progress-bar-info" style="min-width: 25%;">
+                        25%
+                    </div>
+                    <div class="progress-bar progress-bar-warning" style="min-width: 25%;">
+                        25%
+                    </div>
+                    <div class="progress-bar progress-bar-danger" style="min-width: 25%;">
+                        25%
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success progress-bar-striped" style="min-width: 25%;">
+                        25%
+                    </div>
+                    <div class="progress-bar progress-bar-info progress-bar-striped" style="min-width: 25%;">
+                        25%
+                    </div>
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" style="min-width: 25%;">
+                        25%
+                    </div>
+                    <div class="progress-bar progress-bar-danger progress-bar-striped" style="min-width: 25%;">
+                        25%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<!-- Content -->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Modal window -->
+<div class="modal fade" id="modal1">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h4 class="modal-title">Modal Name</h4>
+            </div>
+            <div class="modal-body">
+                <p>Modal content</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal window -->
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/my_scripts.js"></script>
+</body>
+</html>
