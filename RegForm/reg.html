@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light"
+          rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/reg.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="body-content">
+    <div class="module">
+        <h1>Create an account</h1>
+        <form class="form"  id="form" method="post" autocomplete="off">
+            <div class="alert" id="alert"></div>
+            <input type="text"  placeholder="User Name" name="username" id="username" required/>
+            <input type="email" placeholder="Email" name="email" id="email" required/>
+            <input type="password" id="password" placeholder="Password from 8 to 20 characters" name="password" autocomplete="new-password" required/>
+                <span class="eye" id="eye"><i class="fas fa-eye"></i></span>
+            <input type="password" id="repassword" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required/>
+                <span class="eye" id="eye1"><i class="fas fa-eye"></i></span>
+            <div class="avatar"><input type="file" name="avatar" id="avatar" accept="image/*" required/></div>
+            <input type="checkbox"  class="check" name="checkbox" id="checks"required/><label for="checks">Terms and Conditions</label>
+            <input type="submit" id="sub" value="Register" name="register"  class="btn btn-block btn-primary" required />
+        </form>
+    </div>
+</div>
+
+<script src="js/reg.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/masked.input.js"></script>
+</body>
+</html>
