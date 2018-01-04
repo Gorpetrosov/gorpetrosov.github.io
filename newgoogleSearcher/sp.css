@@ -1,0 +1,30 @@
+body{
+    background:  url("i.jpeg");
+    background-repeat: repeat;
+    background-size: 100%;
+
+}
+.speech {
+    background-color: #fff;
+    /*border: 1px solid cornflowerblue;*/
+    border-radius: 10px;
+    width: 300px;
+    padding: 0;
+    margin: 15% auto;
+    position: relative;
+
+}
+.speech input {
+    border: 0;
+    border-radius: inherit;
+    width: 260px;
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+}
+.speech img {
+    float: right;
+    width: 40px;
+    margin: -1px -12px ;
+    position: absolute;
+}
