@@ -1,5 +1,5 @@
 body{
-    background:  url("i.jpeg");
+    background:  url("m/i.jpeg");
     background-repeat: repeat;
     background-size: 100%;
 
@@ -27,4 +27,22 @@ body{
     width: 40px;
     margin: -1px -12px ;
     position: absolute;
+}
+@media screen and (max-width: 960px) {
+    body {
+        background-image: url("m/2.jpg");
+        background-size: 100%;
+    }
+}
+@media screen and (max-width: 770px) {
+    body {
+        background-image: url("m/4.jpg");
+        background-size: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        background-image: url("m/3.jpg");
+        background-size: 100%;
+    }
 }
