@@ -1,3 +1,4 @@
+var image = document.getElementById("img");
 function startDictation() {
 
     if (window.hasOwnProperty('webkitSpeechRecognition')) {
@@ -7,8 +8,11 @@ function startDictation() {
         recognition.continuous = false;
         recognition.interimResults = false;
 
-        recognition.lang = "en-US";
+        // recognition.lang = "en-US";
         recognition.start();
+        image.src = "m/n.png";
+        image.style.marginTop = "1px";
+        image.style.borderRadius = "50%";
 
         recognition.onresult = function(e) {
             document.getElementById('transcript').value
@@ -19,6 +23,7 @@ function startDictation() {
 
         recognition.onerror = function(e) {
             recognition.stop();
+            image.src = "//i.imgur.com/cHidSVu.gif";
         }
 
     }
