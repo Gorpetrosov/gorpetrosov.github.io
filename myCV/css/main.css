@@ -23,6 +23,9 @@ body {
     font-weight: 300;
     font-size: 18px;
 }
+.point  {
+    cursor: pointer;
+}
 
 p {
     font-size: 1em;
