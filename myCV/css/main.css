@@ -127,6 +127,7 @@ section .content {
 
 #on, #off {
     cursor: pointer;
+    font-weight: bold;
 }
 .pic > img {
 
