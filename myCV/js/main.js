@@ -5,6 +5,9 @@ new universalParallax().init({
 
 //popup function
 
+var musicLove = document.getElementById("myMus");
+
+
 document.querySelector('.openPopup').addEventListener('click', function() {
 
     var jPopupDemo = new jPopup({
@@ -28,10 +31,13 @@ document.querySelector('.openSecondPopup').addEventListener('click', function() 
                     <p>SQL.</p>'
 
     });
-
 });
-
-
+document.getElementById("on").onclick = function () {
+    musicLove.play();
+}
+document.getElementById("off").onclick= function () {
+    musicLove.pause();
+}
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -39,10 +45,13 @@ var modal = document.getElementById('myModal');
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
+var open = document.getElementById("play");
+var close = document.getElementById("closePlay");
 img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
+    open.play();
 }
 
 // Get the <span> element that closes the modal
@@ -51,6 +60,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    close.play();
 }
     //typing text
     // _(selector, speed, initialDelay)

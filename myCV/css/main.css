@@ -23,9 +23,6 @@ body {
     font-weight: 300;
     font-size: 18px;
 }
-.point  {
-    cursor: pointer;
-}
 
 p {
     font-size: 1em;
@@ -128,7 +125,9 @@ section .content {
     background-image: url('../img/bg4.jpg');
 }
 
-
+#on, #off {
+    cursor: pointer;
+}
 .pic > img {
 
     position: relative;
@@ -184,6 +183,10 @@ typing text popup
     /*left: 50%;*/
     /*transform: translate(-50%, -50%);*/
     /*text-align: center;*/
+}
+
+.point  {
+    cursor: pointer;
 }
 /*modal*/
 #myImg {
