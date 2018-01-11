@@ -13,6 +13,7 @@ $(window).scroll(function() {
 });
 $("#return-to-top").click(function() {
     // When arrow is clicked
+    document.getElementById("up").play();
     $("body,html").animate(
         {
             scrollTop: 0 // Scroll to top of body
@@ -110,3 +111,69 @@ span.onclick = function() {
     color: "black",
 }).speed(1000)
     .lineBreak();
+
+/// new page open/cloaser
+// var myWindow;
+//
+// function openWin() {
+//     myWindow = window.open("", "myWindow", "width=300,height=150");
+//     myWindow.open("index.html","_self");
+// }
+//
+// function closeWin() {
+//     myWindow.close();
+// }
+//owl
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        autoplay:true,
+        autoplayTimeout:1500,
+        autoplayHoverPause:true,
+        loop:true,
+        margin:20,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                loop:true,
+                nav:false,
+                ouchDrag: true,
+                autoplayHoverPause:false,
+                dots: false
+            },
+            400:{
+                items:2,
+                loop: true,
+                ouchDrag: true,
+                autoplayHoverPause:false,
+                dots: false
+            },
+            600:{
+                items:3,
+                loop:true,
+                nav:false,
+                ouchDrag:true,
+                autoplayHoverPause:false,
+                dots: false
+            },
+            800: {
+                items:4,
+                loop:true,
+                nav:false,
+                ouchDrag:true,
+                autoplayHoverPause:false,
+                dots: false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:true,
+                // animateOut:false,
+                autoplayHoverPause:false,
+                margin:20,
+                touchDrag: true
+            }
+        }
+    });
+
+});

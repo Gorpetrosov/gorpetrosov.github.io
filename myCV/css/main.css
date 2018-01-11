@@ -76,6 +76,12 @@ section .content {
     /*bottom: 50%;*/
 }
 
+.owlPart{
+    /*width: 100%;*/
+    height: 240px;
+    background-color: #fff;
+    margin-bottom: 15vh;
+}
 .parallax--container {
     position: absolute;
     clip: rect(0, auto, auto, 0);
@@ -101,7 +107,7 @@ section .content {
 }
 
 .container--huge {
-    height: 175vh;
+    height: 135vh;
 }
 
 .container--big {
@@ -307,6 +313,93 @@ typing text popup
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+/*owl carusle*/
+.dws-wrapper {
+    position: absolute;
+}
+.imgBox {
+    position: relative;
+    overflow: hidden;
+}
+.imgBox a {
+    display: block;
+}
+.imgBox a i {
+    position: absolute;
+    font-size: 20px;
+    color: #ffffff;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    transform: scale(3);
+    background: rgba(255,255,255, 0.3);
+    box-shadow: 0 0 0 8px rgba(180,180,180, 0.3);
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    z-index: 2;
+}
+.imgBox:hover a i {
+    opacity: 1;
+    transform: scale(1);
+}
+.imgBox a img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.imgBox:hover a img {
+    transform: scale(1.2);
+}
+.imgBox a::before {
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0, 0.4);
+    width: 0;
+    height: 100%;
+    left: 50%;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.imgBox a:hover::before {
+    width: 100%;
+    left: 0;
+}
+.textBox {
+    position: absolute;
+    bottom: 10%;
+    color: #ffffff;
+    background: rgba(0,0,0, 0.3);
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.textBox h4 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 6px 0;
+}
+.textBox span {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 2px 0 2px;
+}
+.textBox p {
+    text-transform: none;
+    font-size: 10px;
+    margin: 10px 10px 5px;
+}
+.imgBox:hover .textBox {
+    transform: translateY(150%);
 }
 
 /* 100% Image Width on Smaller Screens */
