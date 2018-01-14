@@ -546,9 +546,11 @@ section .content {
 }
 
 .container--big {
+    height: 100vh;
+}
+.container--bigg {
     height: 80vh;
 }
-
 .container--small {
     height: 80vh;
 
