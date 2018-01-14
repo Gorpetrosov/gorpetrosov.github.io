@@ -177,3 +177,10 @@ $(document).ready(function(){
     });
 
 });
+//creating loading page
+$(window).on('load', function () {
+    setTimeout(function () {
+        $("#main").css("display", "block");
+        $("#preloader").css("display","none");
+    },5000)
+});
