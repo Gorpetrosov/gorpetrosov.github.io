@@ -460,6 +460,10 @@ typing text popup
         width: 100%;
     }
 }
+#particles-js{
+    height: 100vh;
+    width: 100%;
+}
 .testclass  {
     left: 39%;
     position: absolute;
