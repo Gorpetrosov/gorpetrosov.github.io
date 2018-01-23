@@ -460,3 +460,8 @@ typing text popup
         width: 100%;
     }
 }
+.testclass  {
+    left: 39%;
+    position: absolute;
+    z-index: 999;
+}
