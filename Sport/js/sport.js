@@ -1,14 +1,22 @@
 $( document ).ready(function() {
 
-$("a b").html(function(index, html) {
-    return html.replace(/\S/g, "<span>$&</span>");
-});
-
-$("a").click(function() {
-    $("a").addClass("loading");
+$("#android b").html(function(index, html) {
+        return html.replace(/\S/g, "<span>$&</span>");
+    });
+    $("#ios b").html(function(index, html) {
+        return html.replace(/\S/g, "<span>$&</span>");
+    });
+$("#android").click(function() {
+    $("#android").addClass("loading");
     setTimeout(function() {
-        $("a").removeClass("loading");
+        $("#android").removeClass("loading");
     }, 8000);
 });
+    $("#ios").click(function() {
+        $("#ios").addClass("loading");
+        setTimeout(function() {
+            $("#ios").removeClass("loading");
+        }, 8000);
+    });
 
 });
