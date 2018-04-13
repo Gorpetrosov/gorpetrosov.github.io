@@ -136,7 +136,7 @@ $(document).ready(function(){
             0:{
                 items:1,
                 loop:true,
-                nav:false,
+                nav:true,
                 ouchDrag: true,
                 autoplayHoverPause:false,
                 dots: false
